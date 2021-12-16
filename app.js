@@ -41,6 +41,7 @@ filterFlights = () => {
       document.getElementById("data").innerHTML = "No flights found.";
       document.getElementById("para").innerHTML = "";
     } else {
+      document.getElementById("para").innerHTML = "";
       filteredFlights.forEach((flight) => {
         let para = document.createElement("p");
         let node = document.createTextNode(
